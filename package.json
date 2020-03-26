@@ -1,0 +1,8 @@
+{
+  "name": "Express---Simple-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/olszowskijacek/Express---Simple-server.git",
+  "author": "Jacek Olszowski <jacek.olszowski1@gmail.com>",
+  "license": "MIT"
+}
