@@ -9,7 +9,7 @@ app.use((req, res, next ) => {
     next();
 });
 
-app.get('/user/', (req, res) => {
+app.use('/user/', (req, res, next) => {
     res.show('forbidden.html');
 });
 
@@ -25,9 +25,13 @@ app.get('/about', (req, res) => {
     res.show('about.html');
 });
 
+app.get('/NotFound.png', (req, res) => {
+    res.sendFile(path.join(__dirname + '/NotFound.png'));
+});
 
-
-
+app.use((req, res) => {
+    res.status(404).show('404.html')
+});
 
 app.listen(9000, () => {
     console.log('Server is running on port: 9000');
