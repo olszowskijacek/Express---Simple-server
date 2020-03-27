@@ -9,6 +9,10 @@ app.use((req, res, next ) => {
     next();
 });
 
+app.get('/user/', (req, res) => {
+    res.show('forbidden.html');
+});
+
 app.get('/', (req, res) => {
     res.show('home.html');
 });
@@ -20,7 +24,6 @@ app.get('/home', (req, res) => {
 app.get('/about', (req, res) => {
     res.show('about.html');
 });
-
 
 
 
