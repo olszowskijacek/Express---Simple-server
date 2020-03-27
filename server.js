@@ -9,7 +9,17 @@ app.use((req, res, next ) => {
     next();
 });
 
+app.get('/', (req, res) => {
+    res.show('home.html');
+});
 
+app.get('/home', (req, res) => {
+    res.show('home.html');
+});
+
+app.get('/about', (req, res) => {
+    res.show('about.html');
+});
 
 
 
