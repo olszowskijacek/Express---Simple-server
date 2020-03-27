@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const app = express();
 
 app.use((req, res, next ) => {
     res.show = (name) => {
@@ -11,7 +12,7 @@ app.use((req, res, next ) => {
 
 
 
-const app = express();
+
 
 
 
